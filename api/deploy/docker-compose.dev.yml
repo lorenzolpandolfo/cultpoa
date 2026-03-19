@@ -1,0 +1,16 @@
+services:
+  api:
+    ports:
+      # Exposes application port.
+    - "8000:8000"
+    build:
+      context: .
+    volumes:
+      # Adds current directory as volume.
+    - .:/app/src/
+    environment:
+      # Enables autoreload.
+      API_RELOAD: "True"
+  db:
+    ports:
+      - "5432:5432"
