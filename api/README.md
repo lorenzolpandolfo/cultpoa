@@ -3,9 +3,18 @@
 ## Setup
 
 Instalar o UV:
+
+Linux/MacOS
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
+
+Windows
+```bash
+powershell -c "irm https://astral.sh/uv/install.ps1 | more"
+```
+E depois reabrir o powershell
+
 
 Instalar dependências:
 ```bash
